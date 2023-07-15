@@ -1,0 +1,146 @@
+    <!--
+  -- Student Name:
+  -- Student ID:
+  -- Course: CST8117 - Cross-Platform Web Design
+  -- Semester: Spring 2023
+  -- Assignment: Assignment 3 - Online Store Part - 3
+  -- Date Submitted:
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laizo Electronics</title>
+    <!--font-awesome CDN __ Only for icons-->
+    <script
+      src="https://kit.fontawesome.com/4d5d59aedf.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--custom CSS file link-->
+    <link rel="stylesheet" href="assets/main.css" />
+  </head>
+  <body>
+
+    <!--Header section starts here-->
+    <header>
+      <div class="header-top">
+        <div class="social-link">
+          <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+
+        <div class="title">
+          <h3>Laizo Electronics</h3>
+        </div>
+
+        <div class="address">
+          <address>
+            <a href="mailto:customer@laizoelectronics.com"
+              ><i class="fa-solid fa-envelope"></i>customer@laizoelectronics.com</a
+            >
+            <!---skip to content button-->
+            <a href="#content">
+            <button class="skip">
+              <i class="fa-sharp fa-solid fa-circle-chevron-down" title="skip to content"></i></button></a>
+          </address>
+        </div>
+      </div>
+      <!--navbar-->
+      <div class="header-main">
+        <input type="checkbox" id="check">
+        <nav class="navbar">
+          <div class="logo"><h1>LZX</h1></div>
+          <div class="search">
+            <input type="text" placeholder="Search.." /><button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <ul class="menu">
+            <li><a href="index.html">Home </a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about-us.html" class="active">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li>
+              <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+          </ul>
+          <!--for responsive button-->
+          <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+          </label>
+        </nav>
+        <!--navbar ends here-->
+      </div>
+    </header>
+    <!--Header Section ends here-->
+    <!--body starts here-->
+    <h1 class="pheading" id="content">About Us</h1>
+    <div class="about">
+      <figure>
+      <img src="assets/images/aboutus.png" alt="about_image" title="aboutus">
+      <figcaption>Fig.1 : About_us_image</figcaption>
+      </figure>
+      <div class="heading3">Welcome to Laizo electronics!</div> We are a leading online destination for all
+      things related to electronics, catering to tech enthusiasts, hobbyists,
+      and professionals alike. With our vast selection of products, informative
+      resources, and exceptional customer service, we aim to provide you with an
+      exceptional shopping experience.
+      <br />
+      <br>
+      <div class="heading3">Our Mission:</div>
+      <br />
+      At our electronics website, our mission is to empower individuals and
+      businesses to explore the exciting world of electronics. We strive to
+      offer a comprehensive range of high-quality products, ensuring that our
+      customers have access to the latest technological advancements and
+      innovations. Whether you're looking for consumer electronics, components,
+      tools, or educational kits, we've got you covered.
+    </div>
+
+    <!--body ends here-->
+    <!--footer starts here-->
+    <footer>
+      <div class="lists">
+        <div class="logo1">
+          <h3>LZX</h3>
+        </div>
+        <ul class="menu1">
+          <li class="head1">Menu</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+        <ul class="menu1">
+          <li class="head1">Categories</li>
+          <li><a href="#">Computers & Laptops</a></li>
+          <li><a href="#">Mobiles</a></li>
+          <li><a href="#">Skins & Covers</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Lights & Lanterns</a></li>
+          <li><a href="#">Summer Essentials</a></li>
+          <li><a href="#">Winter Essentials</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        Copyright &copy; <a href="#">Laizo Electronics</a>
+      </div>
+    </footer>
+    <script src="/assets/main.js"></script>
+    <!--footer ends here-->
+  </body>
+</html>

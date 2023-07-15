@@ -1,0 +1,422 @@
+/*
+ * Student Name: 
+ * Student ID: 
+ * Course: CST8117 - Cross-Platform Web Design
+ * Semester: Spring 2023
+ * Assignment: Assignment 3 - Online Store Part - 3
+ * Date Submitted:  
+ */
+
+:root{
+    --black:#161922;
+    --light-color:#666;
+    --purple: #d22fd8;
+    --white:#fff;
+    --light-purple: #fee8ff;
+    --golden:rgb(255, 181, 22);
+    --red: rgb(255, 0, 0);
+    --green:#20830c;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.2);
+}
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline:none; border:none;
+    transition: all .2s liner;
+}
+
+html{
+    overflow-x:hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+/*top header where shop name is defined*/
+header{
+    position:sticky;
+    top:0;
+}
+.header-top{
+    top:0; left:0; right:0;
+    background: var(--black); 
+    padding:0.5rem 5%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:999;
+    border-bottom: solid 2px var(--purple);
+}
+.header-top .social-link i{
+    color: var(--light-purple);
+}
+.header-top .address a{
+    color: var(--light-purple);
+}
+.header-top .address .skip{
+    font-size:1em;
+    cursor: pointer;
+    background-color: transparent;
+    color:var(--light-purple);
+}
+.header-top .title{
+    font-size:1.5em;
+    color: var(--light-purple);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* button defined for small screeen device view*/
+
+/* navigation bar */
+.navbar{
+    top:0;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index:1000;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+}
+.navbar .logo h1{
+    color:var(--black);
+    border-bottom: 4px solid var(--purple);
+}
+.navbar .search{
+    border:solid 2px var(--purple);
+    padding: 5px;
+    font-size:15px;
+    color: var(--purple);
+}
+.navbar .search button{
+    float:right;
+    cursor:pointer;
+    border:none;
+    font-size:15px;
+    background: transparent;
+}
+.navbar .search button:hover{
+    color:var(--purple);
+}
+.navbar .menu li{
+    list-style: none;
+    display:inline-block;
+}
+.navbar .menu li a{
+    display:block;
+    margin-left: 15px;
+    color:var(--black);
+    border-bottom:4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.navbar .menu li a i{
+    color:var(--purple);
+}
+
+.navbar .menu li .active{
+    border-bottom:4px solid var(--purple);
+}
+.navbar .menu li a:hover{
+    border-bottom:4px solid var(--purple);
+}
+.navbar .bar{
+    position: relative;
+    margin: auto;
+    display: none;
+}
+.navbar .bar span{
+    position:absolute;
+    color:var(--purple);
+    font-size: 1.5em;
+}
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    display: none;
+}
+@media screen and (max-width: 1000px){
+    .header-top .title{
+        display:none;
+    }
+    .navbar{
+        display:block;
+        padding:0;
+        
+    }
+    .navbar .logo{
+        padding:15px 30px;
+        
+    }
+    .navbar .logo h1{
+        text-align: center;
+        color: var(--purple);
+        font-size: 2em;
+        border:none;
+    }
+    .navbar .search{
+        width:100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom:15px;
+    }
+    .navbar .search input{
+        width:90%;
+    }
+    .navbar ul{
+        display:flex;
+        flex-direction: column;
+        background-color: var(--white);
+        height: 0;
+        visibility: hidden;
+        transition:0.3s;
+        
+    }
+    .navbar ul li{
+        text-align:center;
+        padding:5px;
+        font-size: 1.5em;
+    }
+    .navbar .menu li .active{
+        border:none;
+        color: var(--purple);
+        box-shadow: var(--box-shadow);
+        padding:5px;
+        margin-bottom: 5px;
+    }
+    .navbar .bar{
+        display:block;
+        position: absolute;
+        top:20px;
+        right:80px;
+        cursor: pointer;
+    }
+    .navbar .bar #times{
+        display: none;
+    }
+    #check:checked ~ .navbar .bar #times{
+        display:block;
+    }
+    #check:checked ~ .navbar .bar #bars{
+        display: none;
+    }
+    #check:checked ~ .navbar ul{
+        visibility: visible;
+        height:auto;
+    }
+}
+    
+
+/* Content */
+.content{
+    background-image: url("./images/banner-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:0 5%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--white);
+    height: 90vh;
+}
+
+.content h1{
+    font-size:40px;
+}
+.content p{
+    font-size:20px;
+    margin-top:20px;
+}
+.content button{
+    margin-top:30px;
+    padding:15px 30px;
+    border: none;
+    background: var(--purple);
+    color: var(--white);
+    font-size:20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+.pheading{
+    text-align: center;
+    margin:50px 0;
+    color: var(--black);
+}
+
+.sec2{
+    box-shadow: var(--box-shadow);
+    display:grid;
+    grid-template-columns: repeat(auto-fit
+    , minmax(300px,1fr));
+    column-gap: 15px;
+    justify-items: center;
+    margin:0 10%;
+    margin-top:50px;
+    padding:5%;
+    margin-bottom:50px;
+}
+
+.sec2 .proimage figcaption{
+    text-align: center;
+    color: var(--light-color);
+}
+.sec2 .promotion h2{
+    color: var(--black);
+    font-size:1.8em;
+}
+.sec2 .promotion p{
+    text-align: justify;
+    font-size:1.2em;
+    color: var(--light-color);
+    line-height: 120%;
+    padding:10% 0;
+}
+/*footer starts here*/
+footer{
+    background-color: var(--black);
+    border-top: var(--purple) 2px solid;
+    padding:5% 5% 0   5%;
+}
+footer .lists{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+}
+footer .lists .logo1{
+    color: var(--purple);
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: underline;
+
+}
+footer .lists .menu1{
+    padding:0 5%;
+    list-style: none;
+    color:var(--purple);
+}
+footer .lists .menu1 .head1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom:5px;
+}
+footer .lists .menu1 a{
+    color:var(--light-purple);
+}
+footer .lists .menu1 a:hover{
+    text-decoration:underline;
+}
+footer .copyright{
+    padding:5% 5% 2% 5%;
+    text-align:center;
+    color: var(--light-purple);
+}
+
+footer .copyright a{
+    color: var(--purple);
+}
+
+/* privacy policy page*/
+.container{
+    padding:5px 5%;
+    
+    
+}
+.container .content2 desc{
+    color:var(--light-color);
+    font-size:1em;
+    
+}
+.container .content2{
+    padding:2% 2%;
+    color: var(--black);
+    font-size: 1em;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    line-height: 120%;
+    
+}
+.container .content2 li{
+    list-style: none;
+    padding:5px;
+}
+.container .content2 .heading2{
+    font-size:1.5em;
+    padding-top:2%;
+    font-weight: bold;
+}
+.heading3{
+    font-weight: bold;
+}
+/*Contact us page*/
+.promotion .contact{
+    display:grid;
+    padding:5% 0;
+    justify-items: center;
+}
+.contact .input-field{
+    width:400px;
+    height:40px;
+    border: 1px solid var(--black);
+    margin-top:5%;
+    padding-left: 5%;
+    padding-right:5%;
+    border-radius: 10px;
+    outline:none;
+}
+.contact .textarea-field{
+    height: 100px;
+    padding-top:10px;
+}
+.contact .form-btn{
+    margin-top:5%;
+    border-radius: 10px;
+    background-color: var(--green);
+    padding:2%;
+    cursor:pointer;
+    color: var(--white);
+    font-size:1em;
+    width:100px;
+    align-items: center;
+}
+.promotion .logo2{
+    font-size:4em;
+    margin-top: 5%;
+    color: var(--green);
+    text-decoration: underline;
+}
+.promotion .social-link{
+    margin-top:5%;
+    font-size: 1.5em;
+}
+.promotion .heading3{
+    margin-top: 20%;
+    font-size: 1.5em;
+    color: var(--black);
+}
+.promotion desc{
+    font-size:2em;
+    margin-top: 5%;
+    color: var(--golden);
+}
+
+
+/*ends here*/
+
+/* about section*/
+.about{
+    padding:5% 5%;
+    margin-bottom: 5%;
+    box-shadow:var(--box-shadow);
+    margin:5%;
+    line-height:120%;
+    font-size:1.2em;
+}
+.about figure{
+    float:right;
+    margin-left:5%;
+    text-align: center;
+}
+
+/* about section ends here*/

@@ -1,0 +1,17 @@
+HTML Element Reference. W3School. (n.d.). https://www.w3schools.com/TAGS/default.asp
+
+HTML elements reference. MDN web docs. (n.d.). https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+CSS Reference. W3Schools. (n.d.). https://www.w3schools.com/cssref/index.php
+
+CSS Reference. MDN web docs. (n.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+CSS Tutorial. W3Schools. (n.d.). https://www.w3schools.com/css/
+
+CSS Tutorial. Tutorials Point. (n.d.). https://www.tutorialspoint.com/css/index.htm
+
+Amazon.com Privacy Notice. Amazon.Com. (n.d.). https://www.amazon.com/gp/help/customer/display.html?nodeId=468496&ref_=footer_privacy
+
+Flipkart Terms of Use. Flipkart.Com. (n.d.). https://www.flipkart.com/pages/terms
+
+Icons. Font Awsome. (n.d.). https://fontawesome.com/                                     

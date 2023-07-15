@@ -1,0 +1,191 @@
+    <!--
+  -- Student Name:
+  -- Student ID:
+  -- Course: CST8117 - Cross-Platform Web Design
+  -- Semester: Spring 2023
+  -- Assignment: Assignment 3 - Online Store Part - 3
+  -- Date Submitted:
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laizo Electronics</title>
+    <!--font-awesome CDN __ Only for icons-->
+    <script
+      src="https://kit.fontawesome.com/4d5d59aedf.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--custom CSS file link-->
+    <link rel="stylesheet" href="assets/main.css" />
+    <link rel="stylesheet" href="assets/products.css">
+  </head>
+  <body>
+
+    <!--Header section starts here-->
+    <header>
+      <div class="header-top">
+        <div class="social-link">
+          <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+
+        <div class="title">
+          <h3>Laizo Electronics</h3>
+        </div>
+
+        <div class="address">
+          <address>
+            <a href="mailto:customer@laizoelectronics.com"
+              ><i class="fa-solid fa-envelope"></i>customer@laizoelectronics.com</a
+            >
+            <!---skip to content button-->
+            <a href="#content">
+            <button class="skip">
+              <i class="fa-sharp fa-solid fa-circle-chevron-down" title="skip to content"></i></button></a>
+          </address>
+        </div>
+      </div>
+      <!--navbar-->
+      <div class="header-main">
+        <input type="checkbox" id="check">
+        <nav class="navbar">
+          <div class="logo"><h1>LZX</h1></div>
+          <div class="search">
+            <input type="text" placeholder="Search.." /><button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <ul class="menu">
+            <li><a href="index.html" >Home </a></li>
+            <li><a href="products.html" >Products</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li>
+              <a href="cart.html" class="active"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+          </ul>
+          <!--for responsive button-->
+          <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+          </label>
+        </nav>
+        <!--navbar ends here-->
+      </div>
+    </header>
+    <!--Header Section ends here-->
+    <!--body starts here-->
+    <h1 class="pheading" id="content">Shopping Cart</h1>
+    <section class="sec4">
+      <div class="cartproductimg">
+        <figure>
+          <img src="assets/images/laptop-1.jpg" alt="Razer Gaming Laptop" title="Razer Gaming Laptop">
+          <figcaption>Razer Gaming Laptop</figcaption>
+        </figure>
+      </div>
+      <div class="cartproducttext">
+        <h2>Razer Blade 15 Gaming Laptop: NVIDIA GeForce RTX 3070 Ti - 12th Gen
+          Intel 14-Core i7 CPU - 15.6” QHD 240Hz - 16GB DDR5 RAM</h2>
+          <h4>In Stock</h4>
+          <desc>Eligible for free shipping</desc>
+          <form class="quantity" action="#">
+            <label for="quantity"> Qty :</label>
+            <select name="quantity" id="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </form>
+          <ul class="options">
+            <li><a href="#">Delete</a></li>
+            <li><a href="#">Save for later</a></li>
+          </ul>
+      </div>
+      <div class="price2">
+        $159.99
+      </div>
+
+    </section>
+    <section class="sec4">
+      <div class="cartproductimg">
+        <figure>
+          <img src="assets/images/headphones.jpg" alt="PC Gaming Headset" title="PC Gaming Headset">
+          <figcaption>PC Gaming Headset</figcaption>
+        </figure>
+      </div>
+      <div class="cartproducttext">
+        <h2>PC Gaming Headset | Over Ear Wired USB Gaming Headphone , RGB LED, 42H Playtime, Beast Mode(Low Latency Upto 80ms) </h2>
+          <h4>In Stock</h4>
+          <desc>Eligible for free shipping</desc>
+          <form class="quantity" action="#">
+            <label for="quantity"> Qty :</label>
+            <select name="quantity" id="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </form>
+          <ul class="options">
+            <li><a href="#">Delete</a></li>
+            <li><a href="#">Save for later</a></li>
+          </ul>
+      </div>
+      <div class="price2">
+        $35.99
+      </div>
+    </section>
+    <div class="subtotal">
+      <p><b>Subtotal:</b> $195.98 </p>
+    </div>
+    <div class="purchase">
+      <button>Proceed to purchase</button>
+       
+    </div>
+    
+    <!--body ends here-->
+     <!--footer starts here-->
+     <footer>
+      <div class="lists">
+        <div class="logo1">
+          <h3>LZX</h3>
+        </div>
+        <ul class="menu1">
+          <li class="head1">Menu</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+        <ul class="menu1">
+          <li class="head1">Categories</li>
+          <li><a href="#">Computers & Laptops</a></li>
+          <li><a href="#">Mobiles</a></li>
+          <li><a href="#">Skins & Covers</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Lights & Lanterns</a></li>
+          <li><a href="#">Summer Essentials</a></li>
+          <li><a href="#">Winter Essentials</a></li>
+        </ul>
+    </div>
+      <div class="copyright">
+        Copyright &copy; <a href="#">Laizo Electronics</a>
+      </div>
+    </footer>
+    <script src="/assets/main.js"></script>
+  <!--footer ends here-->
+</body>
+</html>

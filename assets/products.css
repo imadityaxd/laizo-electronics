@@ -1,0 +1,235 @@
+/*
+ * Student Name:
+ * Student ID: 
+ * Course: CST8117 - Cross-Platform Web Design
+ * Semester: Spring 2023
+ * Assignment: Assignment 3 - Online Store Part - 3
+ * Date Submitted:
+ */
+
+.sec{
+    padding:10px 5%;
+}
+.products{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+    justify-items: center;
+}
+.products .card{
+    width:300px;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius:5px;
+    padding:5px;
+    margin-bottom:20px;
+}
+
+.products .card img{
+    width:100%;
+}
+.products .card .title{
+    padding:5px 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--black);
+}
+.products .card .desc{
+    padding:0 20px;
+    color:var(--light-color);
+}
+
+.products .card .box{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+}
+.products .card .box .price{
+    color:var(--purple);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.products .card .box .btn{
+    font-size:15px;
+    color:var(--purple);
+    padding:10px 18px;
+    font-weight: bold;
+    border:1px solid var(--purple);
+    border-radius:20px;
+}
+.products .card .box .btn:hover{
+    cursor:pointer;
+    background-color: var(--purple);
+    color: var(--white);
+}
+/*products page header -- menu2 */
+.header-bottom .menu2{
+    display:flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.5rem 5%;
+    background-color: var(--black);
+    box-shadow: var(--box-shadow);
+}
+.header-bottom .menu2 li a{
+    color:var(--light-purple);
+    font-size:1em;
+}
+.header-bottom .menu2 li a:hover{
+    border-bottom: solid var(--purple);
+}
+/* products page header-bottom menu2 ends here*/
+
+/*products page content starts now*/
+figure{
+    padding:5%;
+}
+.banner img{
+    width:100%;
+}
+/*productss page ends here */
+/*product page starts*/
+.sec3{
+    display:flex;
+    padding:5%;
+    margin:auto;
+    justify-content: space-between;
+    column-gap: 5%;
+    background-color: var(--white);
+}
+.sec3 figure img{
+    width:40vw;
+}
+.sec3 figure figcaption{
+    text-align:center;
+}
+.sec3 .protext ul{
+    display:flex;
+    list-style:none;
+}
+.sec3 .protext .rating li{
+    color:var(--golden);
+}
+.sec3 .protext .rating{
+    
+    font-size:1em;
+    padding:2%;
+    border-bottom:solid 1px var(--light-color);
+}
+/*price*/
+.sec3 .protext .price2{
+   
+    display:flex;
+    align-items: center;
+    column-gap: 5%;
+}
+.sec3 .protext .discount{
+    font-size:1.5em;
+    color:var(--red);
+}
+.sec3 .protext .price{
+    font-size: 1.8em;
+}
+.sec3 .protext desc{
+    color: var(--light-color);
+    font-size:0.8em;
+}
+.sec3 .protext .location{
+    column-gap: 2%;
+    margin:2% 0;
+    font-size:1em;
+    color:var(--black);
+}
+.sec3 .protext h4{
+    color:var(--green);
+}
+/*.*/
+.sec3 .protext .quantity{
+    padding: 2% 0;
+}
+.sec3 .protext .cart{
+    font-size:1em;
+    background-color: var(--light-purple);
+    border:solid 2px var(--purple);
+    border-radius:5px;
+    padding:5px;
+    margin-bottom:1%;
+}
+.sec3 .protext .buy{
+    font-size: 1em;
+    background-color: var(--purple);
+    border:solid transparent;
+    padding:5px;
+    border-radius:5px;
+    color: var(--white);
+    margin-bottom: 1%;
+}
+.sec3 .protext .head{
+    font-weight: bold;
+}
+.sec3 .protext .details{
+    line-height: 120%;
+    font-size: 1em;
+    border-bottom:solid 1px var(--light-color);
+}
+.sec3 .protext td{
+    padding:5px 5px 5px 0;
+}
+.sec3 .protext p{
+    line-height:120%;
+    font-size: 1em;
+}
+.sec4{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 5%;
+    padding:5% 5% 0 5%;
+    border-bottom:solid 1px var(--light-color);
+}
+.sec4 figure figcaption{
+    text-align:center;
+}
+.sec4 .cartproducttext h4{
+    color:var(--green);
+    padding:5px 0 5px 0;
+}
+.sec4 .cartproducttext desc{
+    font-size: 1em;
+    color:var(--light-color);
+    padding:5px 0 5px;
+}
+.sec4 .cartproductimg img{
+    width:150px;
+}
+.sec4 .cartproducttext .options{
+    list-style: none;
+    padding: 5px 0 5px 0;
+}
+.sec4 .cartproducttext .options a{
+    color:var(--red);
+}
+.sec4 .price2{
+    font-weight: bold;
+    font-size:1.2em;
+}
+.subtotal p{
+    text-align:right;
+    padding:0 5%;
+    font-size: 1.5em;
+}
+.purchase{
+    text-align: center;
+}
+.purchase button{
+    border:solid 2px var(--green);
+    padding:10px;
+    font-size:1.2em;
+    border-radius:5px;
+    background-color: var(--green);
+    font-weight: bold;
+    color: var(--white);
+    cursor:pointer;
+    margin-bottom:1%;
+}

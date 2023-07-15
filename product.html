@@ -1,0 +1,256 @@
+    <!--
+  -- Student Name: 
+  -- Student ID: 0
+  -- Course: CST8117 - Cross-Platform Web Design
+  -- Semester: Spring 2023
+  -- Assignment: Assignment 3 - Online Store Part - 3
+  -- Date Submitted: 
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>laizo Electronics</title>
+    <!--font-awesome CDN __ Only for icons-->
+    <script
+      src="https://kit.fontawesome.com/4d5d59aedf.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--custom CSS file link-->
+    <link rel="stylesheet" href="assets/main.css" />
+    <link rel="stylesheet" href="assets/products.css" />
+  </head>
+  <body>
+
+
+    <!--Header section starts here-->
+
+    <header>
+      <div class="header-top">
+        <div class="social-link">
+          <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+
+        <div class="title">
+          <h3>Laizo Electronics</h3>
+        </div>
+
+        <div class="address">
+          <address>
+            <a href="mailto:customer@laizoelectronics.com"
+              ><i class="fa-solid fa-envelope"></i>customer@laizoelectronics.com</a
+            >
+            <a href="#content">
+            <button class="skip">
+              <i
+                class="fa-sharp fa-solid fa-circle-chevron-down"
+                title="skip to content"
+              ></i>
+            </button></a>
+          </address>
+        </div>
+      </div>
+      <!--navbar-->
+      <div class="header-main">
+        <input type="checkbox" id="check">
+        <nav class="navbar">
+          <div class="logo"><h1>LZX</h1></div>
+          <div class="search">
+            <input type="text" placeholder="Search.." /><button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <ul class="menu">
+            <li><a href="index.html">Home </a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li>
+              <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+          </ul>
+          <!--for responsive button-->
+          <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+          </label>
+        </nav>
+        <!--navbar ends here-->
+        <!--navbar for categories-->
+        <div class="header-bottom">
+          <ul class="menu2">
+            <li><a href="#">Laptops</a></li>
+            <li><a href="#">Desktops</a></li>
+            <li><a href="#">PC Gaming</a></li>
+            <li><a href="#">Tablets</a></li>
+            <li><a href="#">Monitors</a></li>
+            <li><a href="#">Drivers and Storage</a></li>
+            <li><a href="#">Computer Components</a></li>
+            <li><a href="#">Computer Accessories</a></li>
+            <li><a href="#">Home Appliances</a></li>
+          </ul>
+        </div>
+        <!--navbar ends-->
+      </div>
+    </header>
+    <!--Header Section ends here-->
+    <!--body starts here-->
+    <section class="sec3" id="content">
+      <div class="proimage2">
+        <figure>
+          <img
+            src="assets/images/laptop-2.jpg"
+            alt="Razer Blade 15 Gaming Laptop"
+            title="Razer Blade 15 Gaming Laptop"
+          />
+          <figcaption>Razer Blade 15 Gaming Laptop</figcaption>
+        </figure>
+      </div>
+      <div class="protext">
+        <h3>
+          Razer Blade 15 Gaming Laptop: NVIDIA GeForce RTX 3070 Ti - 12th Gen
+          Intel 14-Core i7 CPU - 15.6” QHD 240Hz - 16GB DDR5 RAM - 1TB PCIe SSD
+          - Windows 11 - CNC Aluminum - Chroma RGB - Thunderbolt 4
+        </h3>
+        <ul class="rating">
+          4.0
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-regular fa-star"></i></li>
+        </ul>
+        <ul class="price2">
+          <li class="discount">-33%</li>
+          <li class="price">$1999.99</li>
+        </ul>
+        <desc>List price: $2999.99 </desc>
+        <ul class="location">
+          <li><i class="fa-solid fa-location-dot"></i></li>
+          <li>Deliver to Canada</li>
+        </ul>
+        <h4>In Stock</h4>
+        <form class="quantity" action="#">
+          <label for="quantity"> Qty :</label>
+          <select name="quantity" id="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </form>
+        <button class="cart">Add to Cart</button><br />
+        <button class="buy">Buy Now</button>
+        <table class="details">
+          <tr>
+            <td class="head">Brand</td>
+            <td>Razer</td>
+          </tr>
+          <tr>
+            <td class="head">Series</td>
+            <td>Blade 15</td>
+          </tr>
+          <tr>
+            <td class="head">Screen Size</td>
+            <td>15.6 Inches</td>
+          </tr>
+          <tr>
+            <td class="head">Color</td>
+            <td>Black</td>
+          </tr>
+          <tr>
+            <td class="head">Hard Disk Size</td>
+            <td>1 TB</td>
+          </tr>
+          <tr>
+            <td class="head">CPU Model</td>
+            <td>Intel Core i7 12800H</td>
+          </tr>
+          <tr>
+            <td class="head">Ram Memory Installed</td>
+            <td>Size 16 GB</td>
+          </tr>
+          <tr>
+            <td class="head">Operating System</td>
+            <td>Windows 11 Home</td>
+          </tr>
+          <tr>
+            <td class="head">Special Feature</td>
+            <td>Anti Glare Coating</td>
+          </tr>
+          <tr>
+            <td class="head">Card Description</td>
+            <td>RTX 3070 Ti</td>
+          </tr>
+        </table>
+        <h3>About this item</h3>
+        <p>
+          NVIDIA GeForce RTX 3070 Ti GPU: The new GeForce RTX 3070 Ti is up to
+          70% faster than RTX 2070 SUPER laptops and can deliver 100 frames per
+          second at 1440p resolution.Voltage:240.0 volts <br />
+          12th Gen Intel Core i7 14-Core CPU: Experience cutting-edge power with
+          the newly released Intel Core i7-12800H processor with up to 4.8GHz of
+          Turbo Boost for unrivalled performance to take on the most demanding
+          gaming and creative tasks <br />
+          QHD 240Hz Display: High refresh rate meets high resolution to provide
+          a responsive gaming experience that comes with a greater level of
+          detail and no screen-tearing thanks to NVIDIA G-SYNC <br />
+          DDR5 4800MHz Memory: 50% faster than the previous genertion, enjoy a
+          quicker, smoother experience when loading applications, running games,
+          and performing other everyday PC tasks <br />
+          Next-Gen Vapor Chamber Cooling: Upgraded with more exhaust fins,
+          quiter fans, and a larger liquid capacity, the new Blade 15 performs
+          cooler and quieter than ever before <br />
+          Advanced Connectivity: Connect, play, and share effortlessly thanks to
+          the built-in HDMI 2.1 port, Thunderbolt 4 USB-C port, and UHS-III SD
+          card slot plus Bluetooth 5.2 connectivity
+        </p>
+      </div>
+    
+    </section>
+
+    <!--body ends here-->
+    <!--footer starts here-->
+    <footer>
+      <div class="lists">
+        <div class="logo1">
+          <h3>LZX</h3>
+        </div>
+        <ul class="menu1">
+          <li class="head1">Menu</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+        <ul class="menu1">
+          <li class="head1">Categories</li>
+          <li><a href="#">Computers & Laptops</a></li>
+          <li><a href="#">Mobiles</a></li>
+          <li><a href="#">Skins & Covers</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Lights & Lanterns</a></li>
+          <li><a href="#">Summer Essentials</a></li>
+          <li><a href="#">Winter Essentials</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        Copyright &copy; <a href="#">Laizo Electronics</a>
+      </div>
+    </footer>
+    <script src="/assets/main.js"></script>
+    <!--footer ends here-->
+  </body>
+</html>

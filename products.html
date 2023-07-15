@@ -1,0 +1,290 @@
+    <!--
+  -- Student Name: 
+  -- Student ID: 
+  -- Course: CST8117 - Cross-Platform Web Design
+  -- Semester: Spring 2023
+  -- Assignment: Assignment 3 - Online Store Part - 3
+  -- Date Submitted: 
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>laizo Electronics</title>
+    <!--font-awesome CDN __ Only for icons-->
+    <script
+      src="https://kit.fontawesome.com/4d5d59aedf.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--custom CSS file link-->
+    <link rel="stylesheet" href="assets/main.css" />
+    <link rel="stylesheet" href="assets/products.css">
+  </head>
+  <body>
+
+
+    <!--Header section starts here-->
+
+    <header>
+      <div class="header-top">
+        <div class="social-link">
+          <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+
+        <div class="title">
+          <h3>Laizo Electronics</h3>
+        </div>
+
+        <div class="address">
+          <address>
+            <a href="mailto:customer@laizoelectronics.com"
+              ><i class="fa-solid fa-envelope"></i>customer@laizoelectronics.com</a
+            >
+            <!---skip to content button-->
+            <a href="#content">
+            <button class="skip" title="skip to content">
+              <i class="fa-sharp fa-solid fa-circle-chevron-down"></i></button></a>
+          </address> 
+        </div>
+      </div>
+      <!--navbar-->
+      <div class="header-main">
+        <input type="checkbox" id="check">
+        <nav class="navbar">
+          <div class="logo"><h1>LZX</h1></div>
+          <div class="search">
+            <input type="text" placeholder="Search.." /><button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <ul class="menu">
+            <li><a href="index.html" >Home </a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li>
+              <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+            
+            <li><a href="#"></a><i class="fa-solid fa-circle-caret-down"></i></li>
+           
+          </ul>
+          <!--for responsive button-->
+          <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+          </label>
+        </nav>
+        <!--navbar ends here-->
+      </div>
+      <!--navbar for categories-->
+      <div class="header-bottom">
+        <ul class="menu2">
+          <li><a href="#">Laptops</a></li>
+          <li><a href="#">Desktops</a></li>
+          <li><a href="#">PC Gaming</a></li>
+          <li><a href="#">Tablets</a></li>
+          <li><a href="#">Monitors</a></li>
+          <li><a href="#">Drivers and Storage</a></li>
+          <li><a href="#">Computer Components</a></li>
+          <li><a href="#">Computer Accessories</a></li>
+          <li><a href="#">Home Appliances</a></li>
+        </ul>
+      </div>
+      <!--navbar ends-->
+    </header>
+    <!--Header Section ends here-->
+    <!--body starts here-->
+    <figure class="banner">
+    <img src="assets/images/banner-2.png" alt="sale 50% off" title="sale">
+  </figure>
+  <h1 class="pheading" id="content">Latest Arrivals</h1>
+  <section class="sec">
+    <div class="products">
+
+      <!---GESTALT DESIGN THEORY 
+        all the procducts card follow gestalt design theory as they all are following same color, shape combinations and look as a whole-->
+      <!--card start -->
+      <div class="card">
+        <div class="img">
+          <img
+            src="assets/images/headphones.jpg"
+            alt="PC Gaming Headset" title="headphone"
+          />
+        </div>
+        <div class="title"><a href="#"> PC Gaming Headset</a></div>
+        <div class="desc">
+          Over Ear Wired USB Gaming Headphone , RGB LED
+        </div>
+        <div class="box">
+          <div class="price">$28.99</div>
+          <button class="btn">Add to Cart</button>
+        </div>
+      </div>
+      <!--card end-->
+
+      <!--card start -->
+      <div class="card">
+        <div class="img">
+          <img src="assets/images/laptop-1.jpg" alt="HP Gaming Laptop" title="laptop"/>
+        </div>
+        <div class="title"><a href="product.html">Razer Blade 15 Gaming Laptop</a></div>
+        <div class="desc">12th Gen Intel Core i7 14-Core CPU</div>
+        <div class="box">
+          <div class="price">$259.99</div>
+          <button class="btn">Add to Cart</button>
+        </div>
+      </div>
+      <!--card end-->
+      <!--card start -->
+      <div class="card">
+        <div class="img">
+          <img src="assets/images/smartwatch.jpg" alt="Boat Smartwatch" title="smartwatch" />
+        </div>
+        <div class="title"><a href="#"> Boat Smartwatch</a></div>
+        <div class="desc">
+          IP68 Waterproof Fitness Tracker for Men and Women
+        </div>
+        <div class="box">
+          <div class="price">$37.99</div>
+          <button class="btn">Add to Cart</button>
+        </div>
+      </div>
+      <!--card end-->
+      <!--card start -->
+      <div class="card">
+        <div class="img">
+          <img src="assets/images/keyboard.jpg" alt="Razer Huntsman V2 Analog Gaming Keyboard" title="keyboard" />
+        </div>
+        <div class="title"><a href="#">Razer Huntsman V2 Analog Gaming Keyboard</a></div>
+        <div class="desc">
+          Chroma RGB Lighting - Magnetic Plush Wrist Rest
+        </div>
+        <div class="box">
+          <div class="price">$158.99</div>
+          <button class="btn">Add to Cart</button>
+        </div>
+      </div>
+      <!--card end-->
+      <!--card start -->
+      <div class="card">
+        <div class="img">
+          <img src="assets/images/earbuds.jpg" alt="TOZO T6 True Wireless Earbuds" title="earbuds" />
+        </div>
+        <div class="title"><a href="#">TOZO T6 True Wireless Earbuds</a></div>
+        <div class="desc">
+          Bluetooth 5.3 Headphones Touch Control with Wireless Charging Case
+        </div>
+        <div class="box">
+          <div class="price">$20.99</div>
+          <button class="btn">Add to Cart</button>
+        </div>
+      </div>
+      <!--card end--><!--card start -->
+      <div class="card">
+        <div class="img">
+          <img src="assets/images/carphoneholder.jpg" alt="Car Phone Holder Mount" title="carphoneholder"/>
+        </div>
+        <div class="title"><a href="#">Car Phone Holder Mount</a></div>
+        <div class="desc">
+          [Military-Grade Suction & Stable Hook] Phone Mount
+        </div>
+        <div class="box">
+          <div class="price">$15.99</div>
+          <button class="btn">Add to Cart</button>
+        </div>
+      </div>
+      <!--card end-->
+      <!--card start -->
+      <div class="card">
+        <div class="img">
+          <img src="assets/images/iphonecharger.jpg" alt="6Pack 3/3/6/6/6/10 FT iPhone Charger" title="iphonecharger"/>
+        </div>
+        <div class="title"><a href="#">6Pack 3/3/6/6/6/10 FT iPhone Charger</a></div>
+        <div class="desc">
+          Nylon Braided Fast Charging Lightning Cable Compatible iPhone 14 Pro/13 mini
+        </div>
+        <div class="box">
+          <div class="price">$11.99</div>
+          <button class="btn">Add to Cart</button>
+        </div>
+      </div>
+      <!--card end-->
+      <!--card start -->
+      <div class="card">
+        <div class="img">
+          <img src="assets/images/controller.jpg" alt="Xbox Elite Wireless Controller Series 2 – Black" title="controller" />
+        </div>
+        <div class="title"><a href="#">Xbox Elite Wireless Controller Series 2</a></div>
+        <div class="desc">
+          Xbox Elite Wireless Controller Series 2 featuring adjustable-tension thumbsticks and shorter hair trigger locks.
+        </div>
+        <div class="box">
+          <div class="price">$34.99</div>
+          <button class="btn">Add to Cart</button>
+        </div>
+      </div>
+      <!--card end-->
+      <!--card start-->
+      <div class="card">
+        <div class="img">
+          <img src="assets/images/mobile.jpg" alt="OnePlus Nord N200" title="mobile" />
+        </div>
+        <div class="title"><a href="#">OnePlus Nord N200</a></div>
+        <div class="desc">
+          5G Unlocked Android Smartphone U.S Version | 6.49" Full HD+LCD Screen | 90Hz Smooth Display | Large 5000mAh Battery | Fast Charging 
+        </div>
+        <div class="box">
+          <div class="price">$166.99</div>
+          <button class="btn">Add to Cart</button>
+        </div>
+      </div>
+      <!--card end-->
+    </div>
+  </section>
+    <!--body ends here-->
+     <!--footer starts here-->
+     <footer>
+      <div class="lists">
+        <div class="logo1">
+          <h3>LZX</h3>
+        </div>
+        <ul class="menu1">
+          <li class="head1">Menu</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+        <ul class="menu1">
+          <li class="head1">Categories</li>
+          <li><a href="#">Computers & Laptops</a></li>
+          <li><a href="#">Mobiles</a></li>
+          <li><a href="#">Skins & Covers</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Lights & Lanterns</a></li>
+          <li><a href="#">Summer Essentials</a></li>
+          <li><a href="#">Winter Essentials</a></li>
+        </ul>
+    </div>
+      <div class="copyright">
+        Copyright &copy; <a href="#">Laizo Electronics</a>
+      </div>
+    </footer>
+    <script src="/assets/main.js"></script>
+  <!--footer ends here-->
+</body>
+</html>
